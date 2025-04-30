@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Game Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #222;
+      padding: 20px;
+    }
+    nav a {
+      color: #0f0;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .game {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .game img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #222;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Game Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section id="games" class="game-grid">
+    <div class="game">
+      <h2>Mine Blocks</h2>
+      <img src="images/mineblocks.png" alt="Mine Blocks">
+      <p><a href="games/mineblocks/index.html">Play Now</a></p>
+    </div>
+    <div class="game">
+      <h2>Snowball Fight</h2>
+      <img src="images/snowballfight.png" alt="Snowball Fight">
+      <p><a href="games/snowballfight/index.html">Play Now</a></p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm a game developer who loves making fun browser games. Stay tuned for more releases!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Game Site</p>
+  </footer>
+</body>
+</html>
